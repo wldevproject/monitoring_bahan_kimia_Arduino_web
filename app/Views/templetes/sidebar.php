@@ -1,0 +1,60 @@
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="#" class="brand-link">
+            <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+            <span class="brand-text font-weight-light">Monitoring Bahan</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="info">
+                    <a href="#" class="d-block">Navigasi Utama</a>
+                    <a id="nama"></a>
+                </div>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <!-- <a href="<?= base_url() ?>/dashboard" class="nav-link active"> -->
+                        <a href="<?= base_url() ?>/dashboard" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="data-bahan">
+                        <a href="<?= base_url() ?>/tambah" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Data Bahan Kimia</p>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="data-admin">
+                        <a href="<?= base_url() ?>/user" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Data Asisten Lab</p>
+                        </a>
+                    </li>
+                    <li class="nav-header">MULTI LEVEL EXAMPLE</li>
+                    <li class="nav-item " style="display: none;">
+                        <a href="<?= base_url() ?>/info" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Info PHP</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="<?= base_url() ?>" class="nav-link" id="logout">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Logout</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
